@@ -1,0 +1,13 @@
+newEmployee -> addEmployee.jsp
+
+saveEmployee -> redirect:/viewEmployees
+
+viewEmployees -> viewEmployees.jsp
+
+editEmployee -> editEmployee/{id} -> editEmployee.jsp
+
+editSaveEmployee -> redirect:/viewEmployees
+
+deleteEmployee -> /deleteEmployee/{id} -> redirect:/viewEmployees
+
+departmentList
