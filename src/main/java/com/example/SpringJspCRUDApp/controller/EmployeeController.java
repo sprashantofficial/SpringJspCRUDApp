@@ -67,7 +67,7 @@ public class EmployeeController {
 	@RequestMapping(value = "/deleteEmployee/{id}", method = RequestMethod.GET)
 	public String deleteEmployee(@PathVariable Long id, ModelMap model) {
 		
-		if (empService.deleteEmployee(id)) {
+		if (!empService.deleteEmployee(id)) {
 			System.out.println("Some error occured while deleting");
 		}
 		
